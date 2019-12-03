@@ -4,7 +4,7 @@
 }
 </script></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:xmlTemplates/><con:parameters/></con:reporting><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
 // This code is often used for adding custom authentication to SoapUI Pro tests
-
+asdf
 // If hardcoding the token, uncomment and change line 5
 // def token = '4567'
 
