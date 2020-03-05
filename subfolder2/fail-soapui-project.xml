@@ -47,6 +47,24 @@
     <con:properties/>
     <con:reportParameters/>
   </con:testSuite>
+  <con:testSuite id="4b4c0997-d057-49b3-ba2a-e57ee560dd98" name="TestSuite 2">
+    <con:settings/>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="7bc2ee4d-edfe-4e56-aad1-783fe2aca8bb" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="groovy" name="Groovy Script" id="b0b85420-80c6-453a-8170-ff83b7cc574f">
+        <con:settings/>
+        <con:config>
+          <script/>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
