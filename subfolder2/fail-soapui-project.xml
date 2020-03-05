@@ -26,6 +26,22 @@
           <script/>
         </con:config>
       </con:testStep>
+      <con:testStep type="httprequest" name="HTTP Request" id="d33175e7-2873-4bb0-8189-dbc20aa35fd4">
+        <con:settings/>
+        <con:config method="POST" xsi:type="con:HttpRequest" id="14e511c9-a066-46bc-b41d-e3c2bd940fcc" name="HTTP Request" postQueryString="false" mediaType="application/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>https://example.com/b1dca7fe-d36b-4276-b7c4-5ece34417d87</con:endpoint>
+          <con:request>&lt;xml>hej&lt;/xml></con:request>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:config>
+      </con:testStep>
       <con:properties/>
       <con:reportParameters/>
       <con:tagId>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:tagId>
