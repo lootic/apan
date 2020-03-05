@@ -59,6 +59,7 @@
       </con:testStep>
       <con:properties/>
       <con:reportParameters/>
+      <con:tagId>cacb8fda-fbb7-4adc-bae4-4445b9ccee5f</con:tagId>
     </con:testCase>
     <con:properties/>
     <con:reportParameters/>
@@ -103,5 +104,10 @@
 // fos.close()</con:script>
   </con:eventHandlers>
   <con:authRepository/>
-  <con:tags/>
+  <con:tags>
+    <con:tag>
+      <con:id>cacb8fda-fbb7-4adc-bae4-4445b9ccee5f</con:id>
+      <con:name>mytag</con:name>
+    </con:tag>
+  </con:tags>
 </con:soapui-project>

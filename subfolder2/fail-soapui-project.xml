@@ -17,6 +17,18 @@
       <con:properties/>
       <con:reportParameters/>
     </con:testCase>
+    <con:testCase id="2c0dd3df-8364-4b4a-9bbd-0eed609d2b2c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Funkar fint" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:testStep type="groovy" name="Groovy Script" id="5941be04-740a-4244-b374-594061b1285e">
+        <con:settings/>
+        <con:config>
+          <script/>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:tagId>
+    </con:testCase>
     <con:properties/>
     <con:reportParameters/>
   </con:testSuite>
@@ -60,5 +72,10 @@
 // fos.close()</con:script>
   </con:eventHandlers>
   <con:authRepository/>
-  <con:tags/>
+  <con:tags>
+    <con:tag>
+      <con:id>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:id>
+      <con:name>mytag</con:name>
+    </con:tag>
+  </con:tags>
 </con:soapui-project>
