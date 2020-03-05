@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="c523b803-3510-406d-9a1e-be2dae5405f1" created="3.0.0" activeEnvironment="Default environment" name="Faaaail" updated="3.1.0 2020-02-04T16:09:20Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
+  <con:interface xsi:type="con:RestService" id="9159db5f-beef-4284-b56f-e9ff829eb266" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://example.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>http://example.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/" id="426fbcfe-cfb4-4917-b8ff-66e075532ff7">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="" id="a25fee39-b33f-4cfa-9d53-e93accb02cff" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=UTF-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="334cbf36-1df0-4959-80bd-2e982adbed8d" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"/>
+  <con:entry key="Upgrade-Insecure-Requests" value="1"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/607.1 (KHTML, like Gecko) JavaFX/12 Safari/607.1"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+          </con:settings>
+          <con:endpoint>http://example.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://example.com/</con:originalUri>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
   <con:testSuite id="130a2ecd-a53d-4022-82d7-3ea8434dc66e" name="TestSuite 1">
     <con:settings/>
     <con:savedRecentRuns>1</con:savedRecentRuns>
@@ -26,20 +71,41 @@
           <script/>
         </con:config>
       </con:testStep>
-      <con:testStep type="httprequest" name="HTTP Request" id="d33175e7-2873-4bb0-8189-dbc20aa35fd4">
+      <con:testStep type="restrequest" name="REST Request" id="738755aa-9009-43d9-bcca-955ab0af44eb">
         <con:settings/>
-        <con:config method="POST" xsi:type="con:HttpRequest" id="14e511c9-a066-46bc-b41d-e3c2bd940fcc" name="HTTP Request" postQueryString="false" mediaType="application/xml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-          <con:settings>
-            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
-          </con:settings>
-          <con:endpoint>https://example.com/b1dca7fe-d36b-4276-b7c4-5ece34417d87</con:endpoint>
-          <con:request>&lt;xml>hej&lt;/xml></con:request>
-          <con:credentials>
-            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
-            <con:authType>No Authorization</con:authType>
-          </con:credentials>
-          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-          <con:parameters/>
+        <con:config service="http://example.com" resourcePath="/" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="REST Request" id="334cbf36-1df0-4959-80bd-2e982adbed8d" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Accept-Charset" value="ISO-8859-1,utf-8;q=0.7,*;q=0.7"/>
+  <con:entry key="Accept" value="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"/>
+  <con:entry key="Upgrade-Insecure-Requests" value="1"/>
+  <con:entry key="User-Agent" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/607.1 (KHTML, like Gecko) JavaFX/12 Safari/607.1"/>
+  <con:entry key="Accept-Encoding" value="gzip"/>
+  <con:entry key="Accept-Language" value="en-us;q=0.8,en;q=0.7"/>
+</xml-fragment>]]></con:setting>
+            </con:settings>
+            <con:endpoint>http://example.com</con:endpoint>
+            <con:request>{"hej":"hopp"}</con:request>
+            <con:originalUri>http://example.com/</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="0897589c-a069-408c-8098-947f0bb6bd2d" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="f6f3368c-e5bf-4ffe-ac15-09a7fdad4a9b" name="Response SLA" disabled="true">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
         </con:config>
       </con:testStep>
       <con:properties/>
@@ -121,6 +187,13 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
+  <con:environment id="5cf70e51-7271-4841-bf02-fd51c0c51db7" name="my other env">
+    <con:service type="REST" name="http://example.com">
+      <con:endpoint authProfile="Inherit From Parent" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">https://webhook.site/b6e066c6-11d0-4d80-ac75-69b65e76e643</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
   <con:authRepository/>
   <con:tags>
     <con:tag>
