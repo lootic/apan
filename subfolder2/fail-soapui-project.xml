@@ -16,6 +16,7 @@
       </con:testStep>
       <con:properties/>
       <con:reportParameters/>
+      <con:tagId>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:tagId>
     </con:testCase>
     <con:testCase id="2c0dd3df-8364-4b4a-9bbd-0eed609d2b2c" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Funkar fint" searchProperties="true" timeout="0">
       <con:settings/>
@@ -28,10 +29,25 @@
       <con:properties/>
       <con:reportParameters/>
       <con:tagId>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:tagId>
+      <con:tagId>2fe4e906-9897-4f20-84f6-09eb35f33de2</con:tagId>
+    </con:testCase>
+    <con:testCase id="b43786b3-4765-421a-8587-68bc15382aa4" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Copy of TestCase 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="groovy" name="Groovy Script" id="8a5b4dea-a549-455a-a965-bec6a542774e">
+        <con:settings/>
+        <con:config>
+          <script>throw new RuntimeException("failing is fun")</script>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:tagId>2fe4e906-9897-4f20-84f6-09eb35f33de2</con:tagId>
     </con:testCase>
     <con:properties/>
     <con:reportParameters/>
   </con:testSuite>
+  <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
   <con:databaseConnectionContainer/>
@@ -76,6 +92,10 @@
     <con:tag>
       <con:id>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:id>
       <con:name>mytag</con:name>
+    </con:tag>
+    <con:tag>
+      <con:id>2fe4e906-9897-4f20-84f6-09eb35f33de2</con:id>
+      <con:name>mytag2</con:name>
     </con:tag>
   </con:tags>
 </con:soapui-project>
