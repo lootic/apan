@@ -83,5 +83,10 @@ com.eviware.soapui.model.propertyexpansion.PropertyExpansionUtils.globalProperti
     <con:script/>
   </con:eventHandlers>
   <con:authRepository/>
-  <con:tags/>
+  <con:tags>
+    <con:tag>
+      <con:id>22363c9b-c29c-46bd-966b-be7733a7a5a6</con:id>
+      <con:name>mytag</con:name>
+    </con:tag>
+  </con:tags>
 </con:soapui-project>
