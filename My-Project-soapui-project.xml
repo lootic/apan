@@ -49,7 +49,7 @@
             <con:settings>
               <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
             </con:settings>
-            <con:endpoint>http://google.com</con:endpoint>
+            <con:endpoint xsi:nil="true"/>
             <con:request/>
             <con:originalUri>http://www.google.com/</con:originalUri>
             <con:assertion type="Valid HTTP Status Codes" id="299e3953-88fd-45fc-9f4c-bc4ea6bd6c1a" name="Valid HTTP Status Codes">
@@ -76,7 +76,7 @@
       <con:testStep type="delay" name="Delay" id="701072df-569f-412a-a667-a761ef0b31b9">
         <con:settings/>
         <con:config>
-          <delay>1000</delay>
+          <delay>1001</delay>
         </con:config>
       </con:testStep>
       <con:properties/>
